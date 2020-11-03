@@ -1,0 +1,11 @@
+let angle1 = +prompt('Enter angle 1');
+let angle2 = +prompt('Enter angle 2');
+const sum = 180;
+let angle3 = sum - angle1 - angle2;
+if(angle1 > 0 && angle1 < 180 ) {
+  if(angle2 > 0 && angle2 < 180) {
+  console.log(`Angle3 is equal to : ${angle3}`)
+  } 
+} else{
+  console.log(`Such a triangle doesn't exict`);
+}
