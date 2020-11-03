@@ -1,0 +1,14 @@
+let num = String(1234);
+let temp = num[3];
+num[3] = num[0];
+num[0] = temp;
+num = +num;
+console.log(num);
+
+
+let num = String(1234);
+let i;
+for(i = 0; i < num.length-1; i++) {
+  num[i] = num[i+1];
+}
+console.log(num);
