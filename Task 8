@@ -1,0 +1,15 @@
+let age = +prompt(`enter age in numbers`);
+let period = String(prompt(`Enter if it's in months or in years`));
+if(age > 0 && age <= 12 && period == 'month' || age <=1 && age > 0 && period == 'year') {
+  console.log(`${age} ${period}, baby`)
+} else if(age > 1 && age <= 2 && period == 'year' || age > 12 && age <= 24 && period == 'month') {
+  console.log(`${age} ${period}, toddler`)
+} else if(age > 2 && age <= 12 && period == 'year' || age > 24 && age <= 144 && period == 'month') {
+  console.log(`${age} ${period}, child`)
+} else if(age > 12 && age <= 17 && period == 'year' || age > 144 && age <= 12*17 && period == 'month') {
+  console.log(`${age} ${period}, teenager`)
+} else if(age > 17 && period == 'year' || age > 12*17 && period == 'month') {
+  console.log(`${age} ${period}, adult`)
+} else {
+  console.log(`Something went wrong`)
+}
