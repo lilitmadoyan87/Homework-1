@@ -1,0 +1,11 @@
+let mark1 = Math.abs(+prompt(`Enter 1-st mark`));
+let mark2 = Math.abs(+prompt(`Enter 2-nd mark`));
+let mark3 = Math.abs(+prompt(`Enter 3-rd mark`));
+let average = (mark1 + mark2 + mark3)/3;
+if(mark1 >=40 && mark2 >= 40 && mark3 >= 40 ) {
+  console.log(`Student has passed`);
+} else if((mark1 < 40 && mark2 > 40 && mark3 > 40 && average >= 50) || (mark1 > 40 && mark2 < 40 && mark3 > 40 && average >= 50) || (mark1 > 40 && mark2 > 40 && mark3 < 40 && average >= 50)) {
+  console.log(`Student has passed`)
+} else{
+  console.log(`Student has failed`)
+}
