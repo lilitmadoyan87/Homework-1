@@ -1,0 +1,11 @@
+let num = prompt(`Enter number or any text`);
+let digit = prompt(`Enter digit`);
+let i = num.length;
+let result = 'number does not contain the digit';
+for(i = 0; i < num.length; i++) {
+    if(num[i] === digit) {
+      result = `number contains the digit`
+    break 
+    }
+}
+    console.log(result) 
