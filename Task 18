@@ -1,0 +1,12 @@
+let num = prompt(`Enter number`);
+let max = +num[0];
+let min = +num[num.length - 1];
+for(let i = 0; i < num.length; i++) {
+  if(+num[i] >= max) {
+    max = +num[i]
+  } else if(+num[i] <= min) {
+    min = +num[i]
+  }
+}
+let dif = max - min;
+console.log(dif);
