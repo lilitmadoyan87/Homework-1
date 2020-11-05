@@ -1,7 +1,3 @@
-let n = +prompt(`Enter positive number`);
+let n = Math.abs(+prompt(`Enter positive number`));
 let a = String(n) + (n * 2) + (n * 3);
-if(n > 0) {    
-  console.log(a);
-  } else {
-  console.log(`n is not positive`)
-  };
+console.log(a);
