@@ -1,0 +1,13 @@
+let a = +prompt('Enter a');
+let b = +prompt('Enter b');
+let c = +prompt('Enter c');
+let disc = Math.pow(b, 2) - 4*a*c;
+if(a !== 0 && disc >= 0) {
+let x1 = (b + Math.sqrt(disc))/(2*a);
+let x2 =(Math.sqrt(disc) - b)/(2*a);
+console.log(`Solutions are ${x1} and ${x2}`)
+} else if(a === 0 ) {
+  console.log(`Enter valid constants`)
+} else{
+  console.log(`Solution does not exist`)
+}
