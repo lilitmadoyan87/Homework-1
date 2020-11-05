@@ -1,0 +1,22 @@
+let figure = prompt(`Write the figure name: Rectangular or Triangle`)
+let area;
+if(figure === `Rectangular`) {
+  let width = +prompt(`Enter width`);
+  let length = +prompt(`Enter length`);
+  if(width > 0 && length > 0) {
+    area = width * length
+  } else{
+    console.log(`“Please enter only positives”`)
+  }
+} else if(figure === `Triangle`) {
+  let height = +prompt(`Enter height`);
+  let base = +prompt(`Enter base`);
+  if(height > 0 && base > 0) {
+    area = height * base*(1/2)
+  } else{
+    console.log(`“Please enter only positives”`)
+  }
+} else {
+  console.log(`Enter valid figure`)
+}
+console.log(`“Square of the ${figure} is ${area}`);
