@@ -9,4 +9,3 @@ if(angle1 > 0 && angle1 < 180 ) {
 } else{
   console.log(`Such a triangle doesn't exict`);
 }
- 
